@@ -55,7 +55,7 @@ struct ContentView: View {
     private func mainView() -> some View {
         var leadingNavigationItem: some View {
             Button(action: summonImagePicker) {
-                Text("Select")
+                Image(systemName: "photo.circle")
             }
         }
         var trailingNavigationItem: some View {
@@ -71,7 +71,7 @@ struct ContentView: View {
                 TwoStateButton(text: "Detect Faces", disabled: !detectionEnabled, action: getFaces)
             }
             .padding()
-            .navigationBarTitle(Text("FDDemo"), displayMode: .inline)
+            .navigationBarTitle(Text("FD"), displayMode: .inline)
             .navigationBarItems(leading: leadingNavigationItem, trailing: trailingNavigationItem)
         }.disabled(!cameraEnabled)
     }

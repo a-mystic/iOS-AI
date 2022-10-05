@@ -13,7 +13,7 @@ struct TwoStateButton: View {
     private let background: Color
     private let action: () -> Void
     
-    init(text: String, disabled: Bool, background: Color = .blue, action: @escaping () -> Void) {
+    init(text: String, disabled: Bool, background: Color = .orange, action: @escaping () -> Void) {
         self.text = text
         self.disabled = disabled
         self.background = disabled ? .gray : background
@@ -119,15 +119,14 @@ extension UIImage {
     
     var cgImageOrientation: CGImagePropertyOrientation {
         switch self.imageOrientation {
-        case .up: return .up
-        case .down: return .down
-        case .left: return .left
-        case .right: return .right
-        case .upMirrored: return .upMirrored
-        case .downMirrored: return .downMirrored
-        case .leftMirrored: return .leftMirrored
-        case .rightMirrored: return .rightMirrored
-        default: return .up
+            case .up: return .up
+            case .down: return .down
+            case .left: return .left
+            case .right: return .right
+            case .upMirrored: return .upMirrored
+            case .downMirrored: return .downMirrored
+            case .leftMirrored: return .leftMirrored
+            case .rightMirrored: return .rightMirrored
         }
     }
 }
