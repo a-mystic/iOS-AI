@@ -12,6 +12,8 @@
 		4A3D272228EEEE6D00E4680E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D272128EEEE6D00E4680E /* Assets.xcassets */; };
 		4A3D272528EEEE6D00E4680E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D272428EEEE6D00E4680E /* Preview Assets.xcassets */; };
 		4A3D272C28EEEEF700E4680E /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D272B28EEEEF700E4680E /* ImagePickerView.swift */; };
+		4A5272CF28EFFB92003B8CDE /* BananaOrApple.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A5272CE28EFFB92003B8CDE /* BananaOrApple.mlmodel */; };
+		4A5272D328EFFD07003B8CDE /* Vision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5272D228EFFD07003B8CDE /* Vision.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		4A3D272128EEEE6D00E4680E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A3D272428EEEE6D00E4680E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A3D272B28EEEEF700E4680E /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		4A5272CE28EFFB92003B8CDE /* BananaOrApple.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = BananaOrApple.mlmodel; path = "../../../../PracticalAIwithSwift1stEd-Code/Chapter 4 - Vision/Image Classification/ICDemo-Complete/ICDemo/BananaOrApple.mlmodel"; sourceTree = "<group>"; };
+		4A5272D228EFFD07003B8CDE /* Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vision.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			children = (
 				4A3D271D28EEEE6900E4680E /* ImageClassificationApp.swift */,
 				4A3D271F28EEEE6900E4680E /* ContentView.swift */,
+				4A5272D228EFFD07003B8CDE /* Vision.swift */,
 				4A3D272B28EEEEF700E4680E /* ImagePickerView.swift */,
+				4A5272CE28EFFB92003B8CDE /* BananaOrApple.mlmodel */,
 				4A3D272128EEEE6D00E4680E /* Assets.xcassets */,
 				4A3D272328EEEE6D00E4680E /* Preview Content */,
 			);
@@ -141,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A3D272028EEEE6900E4680E /* ContentView.swift in Sources */,
+				4A5272CF28EFFB92003B8CDE /* BananaOrApple.mlmodel in Sources */,
+				4A5272D328EFFD07003B8CDE /* Vision.swift in Sources */,
 				4A3D272C28EEEEF700E4680E /* ImagePickerView.swift in Sources */,
 				4A3D271E28EEEE6900E4680E /* ImageClassificationApp.swift in Sources */,
 			);

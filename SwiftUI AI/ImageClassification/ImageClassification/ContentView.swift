@@ -14,15 +14,16 @@ struct ContentView: View {
     
     private let blankImage = Image(systemName: "photo")
     private var ClassifyEnable: Bool { selectedImage != nil }
-    
+    private var classifier = VisionClassifier(mlmodel: BananaOrApple().model)
+
     var body: some View {
         NavigationView {
             VStack {
                 Spacer()
                 if selectedImage != nil {
-                    Image(uiImage: selectedImage!)
+                    Image(uiImage: selectedImage!).resizable().aspectRatio(contentMode: .fit)
                 } else {
-                    blankImage.font(.largeTitle)
+                    blankImage.font(.largeTitle).aspectRatio(contentMode: .fit)
                 }
                 Spacer()
                 Text(ClassifyResult ?? "please input image")
@@ -57,12 +58,10 @@ struct ContentView: View {
     }
     
     private func ImageClassify() {
-        
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        if let classifier = self.classifier, let image = selectedImage {
+            classifier.classify(image) { str in
+                ClassifyResult = str
+            }
+        }
     }
 }
