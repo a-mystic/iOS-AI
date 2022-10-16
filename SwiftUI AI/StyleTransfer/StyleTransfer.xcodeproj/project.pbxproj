@@ -7,30 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A41B11428F5326F00B86C16 /* DrawingClassifierModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A41B11328F5326F00B86C16 /* DrawingClassifierModel.mlmodel */; };
-		4A41B11628F5342100B86C16 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41B11528F5342100B86C16 /* Extensions.swift */; };
-		4A41B11828F5367800B86C16 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41B11728F5367800B86C16 /* Images.swift */; };
-		4A41B11A28F5383F00B86C16 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41B11928F5383F00B86C16 /* Drawing.swift */; };
-		4A8F419328F3F8710060A8DD /* DrawingDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F419228F3F8710060A8DD /* DrawingDetectorApp.swift */; };
-		4A8F419528F3F8710060A8DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F419428F3F8710060A8DD /* ContentView.swift */; };
-		4A8F419728F3F8730060A8DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8F419628F3F8730060A8DD /* Assets.xcassets */; };
-		4A8F419A28F3F8730060A8DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8F419928F3F8730060A8DD /* Preview Assets.xcassets */; };
+		4A29D4B228F81B6800749DCD /* StyleTransferApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A29D4B128F81B6800749DCD /* StyleTransferApp.swift */; };
+		4A29D4B428F81B6800749DCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A29D4B328F81B6800749DCD /* ContentView.swift */; };
+		4A29D4B628F81B6C00749DCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A29D4B528F81B6C00749DCD /* Assets.xcassets */; };
+		4A29D4B928F81B6C00749DCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A29D4B828F81B6C00749DCD /* Preview Assets.xcassets */; };
+		4A29D4C028F81B9100749DCD /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A29D4BF28F81B9100749DCD /* ImagePickerView.swift */; };
+		4A29D4C228F81E9F00749DCD /* StyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A29D4C128F81E9F00749DCD /* StyleModel.swift */; };
+		4A86D4A928FBF67A00AE8BBA /* StyleTransferModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A86D4A828FBF67A00AE8BBA /* StyleTransferModel.mlmodel */; };
+		4AC2CEDE28FBDB9F005DDB0E /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2CEDD28FBDB9F005DDB0E /* Image.swift */; };
+		4AC2CEE028FBE122005DDB0E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2CEDF28FBE122005DDB0E /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A41B11328F5326F00B86C16 /* DrawingClassifierModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = DrawingClassifierModel.mlmodel; path = "../../../../../PracticalAIwithSwift1stEd-Code/Chapter 7 - Motion and Gestures/Drawing Detection/DDDemo-Drawing/DDDemo/DrawingClassifierModel.mlmodel"; sourceTree = "<group>"; };
-		4A41B11528F5342100B86C16 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		4A41B11728F5367800B86C16 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
-		4A41B11928F5383F00B86C16 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
-		4A8F418F28F3F8710060A8DD /* DrawingDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A8F419228F3F8710060A8DD /* DrawingDetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingDetectorApp.swift; sourceTree = "<group>"; };
-		4A8F419428F3F8710060A8DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4A8F419628F3F8730060A8DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4A8F419928F3F8730060A8DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A29D4AE28F81B6800749DCD /* StyleTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyleTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A29D4B128F81B6800749DCD /* StyleTransferApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferApp.swift; sourceTree = "<group>"; };
+		4A29D4B328F81B6800749DCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A29D4B528F81B6C00749DCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A29D4B828F81B6C00749DCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A29D4BF28F81B9100749DCD /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		4A29D4C128F81E9F00749DCD /* StyleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleModel.swift; sourceTree = "<group>"; };
+		4A86D4A828FBF67A00AE8BBA /* StyleTransferModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = StyleTransferModel.mlmodel; path = "../../../../../PracticalAIwithSwift1stEd-Code/Chapter 8 - Augmentation/Image Style Transfer/NSTDemo-Complete/NSTDemo/StyleTransferModel.mlmodel"; sourceTree = "<group>"; };
+		4AC2CEDD28FBDB9F005DDB0E /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		4AC2CEDF28FBE122005DDB0E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4A8F418C28F3F8710060A8DD /* Frameworks */ = {
+		4A29D4AB28F81B6800749DCD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,41 +42,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A8F418628F3F8710060A8DD = {
+		4A29D4A528F81B6800749DCD = {
 			isa = PBXGroup;
 			children = (
-				4A8F419128F3F8710060A8DD /* DrawingDetector */,
-				4A8F419028F3F8710060A8DD /* Products */,
+				4A29D4B028F81B6800749DCD /* StyleTransfer */,
+				4A29D4AF28F81B6800749DCD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4A8F419028F3F8710060A8DD /* Products */ = {
+		4A29D4AF28F81B6800749DCD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A8F418F28F3F8710060A8DD /* DrawingDetector.app */,
+				4A29D4AE28F81B6800749DCD /* StyleTransfer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A8F419128F3F8710060A8DD /* DrawingDetector */ = {
+		4A29D4B028F81B6800749DCD /* StyleTransfer */ = {
 			isa = PBXGroup;
 			children = (
-				4A41B11328F5326F00B86C16 /* DrawingClassifierModel.mlmodel */,
-				4A8F419228F3F8710060A8DD /* DrawingDetectorApp.swift */,
-				4A8F419428F3F8710060A8DD /* ContentView.swift */,
-				4A41B11528F5342100B86C16 /* Extensions.swift */,
-				4A41B11728F5367800B86C16 /* Images.swift */,
-				4A41B11928F5383F00B86C16 /* Drawing.swift */,
-				4A8F419628F3F8730060A8DD /* Assets.xcassets */,
-				4A8F419828F3F8730060A8DD /* Preview Content */,
+				4A86D4A828FBF67A00AE8BBA /* StyleTransferModel.mlmodel */,
+				4A29D4B128F81B6800749DCD /* StyleTransferApp.swift */,
+				4A29D4B328F81B6800749DCD /* ContentView.swift */,
+				4A29D4C128F81E9F00749DCD /* StyleModel.swift */,
+				4AC2CEDD28FBDB9F005DDB0E /* Image.swift */,
+				4AC2CEDF28FBE122005DDB0E /* Utils.swift */,
+				4A29D4BF28F81B9100749DCD /* ImagePickerView.swift */,
+				4A29D4B528F81B6C00749DCD /* Assets.xcassets */,
+				4A29D4B728F81B6C00749DCD /* Preview Content */,
 			);
-			path = DrawingDetector;
+			path = StyleTransfer;
 			sourceTree = "<group>";
 		};
-		4A8F419828F3F8730060A8DD /* Preview Content */ = {
+		4A29D4B728F81B6C00749DCD /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				4A8F419928F3F8730060A8DD /* Preview Assets.xcassets */,
+				4A29D4B828F81B6C00749DCD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -82,39 +85,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4A8F418E28F3F8710060A8DD /* DrawingDetector */ = {
+		4A29D4AD28F81B6800749DCD /* StyleTransfer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A8F419D28F3F8730060A8DD /* Build configuration list for PBXNativeTarget "DrawingDetector" */;
+			buildConfigurationList = 4A29D4BC28F81B6C00749DCD /* Build configuration list for PBXNativeTarget "StyleTransfer" */;
 			buildPhases = (
-				4A8F418B28F3F8710060A8DD /* Sources */,
-				4A8F418C28F3F8710060A8DD /* Frameworks */,
-				4A8F418D28F3F8710060A8DD /* Resources */,
+				4A29D4AA28F81B6800749DCD /* Sources */,
+				4A29D4AB28F81B6800749DCD /* Frameworks */,
+				4A29D4AC28F81B6800749DCD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DrawingDetector;
-			productName = DrawingDetector;
-			productReference = 4A8F418F28F3F8710060A8DD /* DrawingDetector.app */;
+			name = StyleTransfer;
+			productName = StyleTransfer;
+			productReference = 4A29D4AE28F81B6800749DCD /* StyleTransfer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4A8F418728F3F8710060A8DD /* Project object */ = {
+		4A29D4A628F81B6800749DCD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					4A8F418E28F3F8710060A8DD = {
+					4A29D4AD28F81B6800749DCD = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
 			};
-			buildConfigurationList = 4A8F418A28F3F8710060A8DD /* Build configuration list for PBXProject "DrawingDetector" */;
+			buildConfigurationList = 4A29D4A928F81B6800749DCD /* Build configuration list for PBXProject "StyleTransfer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,46 +125,47 @@
 				en,
 				Base,
 			);
-			mainGroup = 4A8F418628F3F8710060A8DD;
-			productRefGroup = 4A8F419028F3F8710060A8DD /* Products */;
+			mainGroup = 4A29D4A528F81B6800749DCD;
+			productRefGroup = 4A29D4AF28F81B6800749DCD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4A8F418E28F3F8710060A8DD /* DrawingDetector */,
+				4A29D4AD28F81B6800749DCD /* StyleTransfer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4A8F418D28F3F8710060A8DD /* Resources */ = {
+		4A29D4AC28F81B6800749DCD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A8F419A28F3F8730060A8DD /* Preview Assets.xcassets in Resources */,
-				4A8F419728F3F8730060A8DD /* Assets.xcassets in Resources */,
+				4A29D4B928F81B6C00749DCD /* Preview Assets.xcassets in Resources */,
+				4A29D4B628F81B6C00749DCD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4A8F418B28F3F8710060A8DD /* Sources */ = {
+		4A29D4AA28F81B6800749DCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A41B11428F5326F00B86C16 /* DrawingClassifierModel.mlmodel in Sources */,
-				4A8F419528F3F8710060A8DD /* ContentView.swift in Sources */,
-				4A41B11A28F5383F00B86C16 /* Drawing.swift in Sources */,
-				4A41B11828F5367800B86C16 /* Images.swift in Sources */,
-				4A8F419328F3F8710060A8DD /* DrawingDetectorApp.swift in Sources */,
-				4A41B11628F5342100B86C16 /* Extensions.swift in Sources */,
+				4A29D4B428F81B6800749DCD /* ContentView.swift in Sources */,
+				4A86D4A928FBF67A00AE8BBA /* StyleTransferModel.mlmodel in Sources */,
+				4A29D4C228F81E9F00749DCD /* StyleModel.swift in Sources */,
+				4A29D4C028F81B9100749DCD /* ImagePickerView.swift in Sources */,
+				4A29D4B228F81B6800749DCD /* StyleTransferApp.swift in Sources */,
+				4AC2CEDE28FBDB9F005DDB0E /* Image.swift in Sources */,
+				4AC2CEE028FBE122005DDB0E /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4A8F419B28F3F8730060A8DD /* Debug */ = {
+		4A29D4BA28F81B6C00749DCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -221,7 +225,7 @@
 			};
 			name = Debug;
 		};
-		4A8F419C28F3F8730060A8DD /* Release */ = {
+		4A29D4BB28F81B6C00749DCD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -275,14 +279,14 @@
 			};
 			name = Release;
 		};
-		4A8F419E28F3F8730060A8DD /* Debug */ = {
+		4A29D4BD28F81B6C00749DCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DrawingDetector/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"StyleTransfer/Preview Content\"";
 				DEVELOPMENT_TEAM = 96B293Z3Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -296,7 +300,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mystic.DrawingDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = mystic.StyleTransfer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -304,14 +308,14 @@
 			};
 			name = Debug;
 		};
-		4A8F419F28F3F8730060A8DD /* Release */ = {
+		4A29D4BE28F81B6C00749DCD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DrawingDetector/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"StyleTransfer/Preview Content\"";
 				DEVELOPMENT_TEAM = 96B293Z3Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -325,7 +329,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mystic.DrawingDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = mystic.StyleTransfer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -336,25 +340,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A8F418A28F3F8710060A8DD /* Build configuration list for PBXProject "DrawingDetector" */ = {
+		4A29D4A928F81B6800749DCD /* Build configuration list for PBXProject "StyleTransfer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A8F419B28F3F8730060A8DD /* Debug */,
-				4A8F419C28F3F8730060A8DD /* Release */,
+				4A29D4BA28F81B6C00749DCD /* Debug */,
+				4A29D4BB28F81B6C00749DCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A8F419D28F3F8730060A8DD /* Build configuration list for PBXNativeTarget "DrawingDetector" */ = {
+		4A29D4BC28F81B6C00749DCD /* Build configuration list for PBXNativeTarget "StyleTransfer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A8F419E28F3F8730060A8DD /* Debug */,
-				4A8F419F28F3F8730060A8DD /* Release */,
+				4A29D4BD28F81B6C00749DCD /* Debug */,
+				4A29D4BE28F81B6C00749DCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4A8F418728F3F8710060A8DD /* Project object */;
+	rootObject = 4A29D4A628F81B6800749DCD /* Project object */;
 }
