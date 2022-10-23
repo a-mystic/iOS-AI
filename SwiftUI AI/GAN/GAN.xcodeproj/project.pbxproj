@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A69D31C290514D000C6B677 /* GANApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D31B290514D000C6B677 /* GANApp.swift */; };
+		4A69D31E290514D000C6B677 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D31D290514D000C6B677 /* ContentView.swift */; };
+		4A69D320290514D300C6B677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A69D31F290514D300C6B677 /* Assets.xcassets */; };
+		4A69D323290514D300C6B677 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A69D322290514D300C6B677 /* Preview Assets.xcassets */; };
+		4A69D3382905152E00C6B677 /* MnistGan9.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D32E2905152D00C6B677 /* MnistGan9.mlmodel */; };
+		4A69D3392905152E00C6B677 /* MnistGan5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D32F2905152E00C6B677 /* MnistGan5.mlmodel */; };
+		4A69D33A2905152E00C6B677 /* MnistGan1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D3302905152E00C6B677 /* MnistGan1.mlmodel */; };
+		4A69D33B2905152E00C6B677 /* MnistGan2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D3312905152E00C6B677 /* MnistGan2.mlmodel */; };
+		4A69D33C2905152E00C6B677 /* MnistGan6.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D3322905152E00C6B677 /* MnistGan6.mlmodel */; };
+		4A69D33D2905152E00C6B677 /* MnistGan8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D3332905152E00C6B677 /* MnistGan8.mlmodel */; };
+		4A69D33E2905152E00C6B677 /* MnistGan.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D3342905152E00C6B677 /* MnistGan.mlmodel */; };
+		4A69D33F2905152E00C6B677 /* MnistGan7.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D3352905152E00C6B677 /* MnistGan7.mlmodel */; };
+		4A69D3402905152E00C6B677 /* MnistGan4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D3362905152E00C6B677 /* MnistGan4.mlmodel */; };
+		4A69D3412905152E00C6B677 /* MnistGan3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D3372905152E00C6B677 /* MnistGan3.mlmodel */; };
+		4A69D3432905193B00C6B677 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D3422905193B00C6B677 /* Models.swift */; };
+		4A69D34529051A7C00C6B677 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69D34429051A7C00C6B677 /* Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A69D318290514D000C6B677 /* GAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A69D31B290514D000C6B677 /* GANApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANApp.swift; sourceTree = "<group>"; };
+		4A69D31D290514D000C6B677 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A69D31F290514D300C6B677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A69D322290514D300C6B677 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A69D32E2905152D00C6B677 /* MnistGan9.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MnistGan9.mlmodel; path = "../../../../../../PracticalAIwithSwift1stEd-Code/Chapter 8 - Augmentation/Image Generation/GANDemo/MnistGan9.mlmodel"; sourceTree = "<group>"; };
+		4A69D32F2905152E00C6B677 /* MnistGan5.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MnistGan5.mlmodel; path = "../../../../../../PracticalAIwithSwift1stEd-Code/Chapter 8 - Augmentation/Image Generation/GANDemo/MnistGan5.mlmodel"; sourceTree = "<group>"; };
+		4A69D3302905152E00C6B677 /* MnistGan1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MnistGan1.mlmodel; path = "../../../../../../PracticalAIwithSwift1stEd-Code/Chapter 8 - Augmentation/Image Generation/GANDemo/MnistGan1.mlmodel"; sourceTree = "<group>"; };
+		4A69D3312905152E00C6B677 /* MnistGan2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MnistGan2.mlmodel; path = "../../../../../../PracticalAIwithSwift1stEd-Code/Chapter 8 - Augmentation/Image Generation/GANDemo/MnistGan2.mlmodel"; sourceTree = "<group>"; };
+		4A69D3322905152E00C6B677 /* MnistGan6.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MnistGan6.mlmodel; path = "../../../../../../PracticalAIwithSwift1stEd-Code/Chapter 8 - Augmentation/Image Generation/GANDemo/MnistGan6.mlmodel"; sourceTree = "<group>"; };
+		4A69D3332905152E00C6B677 /* MnistGan8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MnistGan8.mlmodel; path = "../../../../../../PracticalAIwithSwift1stEd-Code/Chapter 8 - Augmentation/Image Generation/GANDemo/MnistGan8.mlmodel"; sourceTree = "<group>"; };
+		4A69D3342905152E00C6B677 /* MnistGan.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MnistGan.mlmodel; path = "../../../../../../PracticalAIwithSwift1stEd-Code/Chapter 8 - Augmentation/Image Generation/GANDemo/MnistGan.mlmodel"; sourceTree = "<group>"; };
+		4A69D3352905152E00C6B677 /* MnistGan7.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MnistGan7.mlmodel; path = "../../../../../../PracticalAIwithSwift1stEd-Code/Chapter 8 - Augmentation/Image Generation/GANDemo/MnistGan7.mlmodel"; sourceTree = "<group>"; };
+		4A69D3362905152E00C6B677 /* MnistGan4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MnistGan4.mlmodel; path = "../../../../../../PracticalAIwithSwift1stEd-Code/Chapter 8 - Augmentation/Image Generation/GANDemo/MnistGan4.mlmodel"; sourceTree = "<group>"; };
+		4A69D3372905152E00C6B677 /* MnistGan3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MnistGan3.mlmodel; path = "../../../../../../PracticalAIwithSwift1stEd-Code/Chapter 8 - Augmentation/Image Generation/GANDemo/MnistGan3.mlmodel"; sourceTree = "<group>"; };
+		4A69D3422905193B00C6B677 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4A69D34429051A7C00C6B677 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A69D315290514D000C6B677 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A69D30F290514D000C6B677 = {
+			isa = PBXGroup;
+			children = (
+				4A69D31A290514D000C6B677 /* GAN */,
+				4A69D319290514D000C6B677 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A69D319290514D000C6B677 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A69D318290514D000C6B677 /* GAN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A69D31A290514D000C6B677 /* GAN */ = {
+			isa = PBXGroup;
+			children = (
+				4A69D32D2905151400C6B677 /* Models */,
+				4A69D31B290514D000C6B677 /* GANApp.swift */,
+				4A69D3422905193B00C6B677 /* Models.swift */,
+				4A69D34429051A7C00C6B677 /* Utils.swift */,
+				4A69D31D290514D000C6B677 /* ContentView.swift */,
+				4A69D31F290514D300C6B677 /* Assets.xcassets */,
+				4A69D321290514D300C6B677 /* Preview Content */,
+			);
+			path = GAN;
+			sourceTree = "<group>";
+		};
+		4A69D321290514D300C6B677 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4A69D322290514D300C6B677 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4A69D32D2905151400C6B677 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A69D3342905152E00C6B677 /* MnistGan.mlmodel */,
+				4A69D3302905152E00C6B677 /* MnistGan1.mlmodel */,
+				4A69D3312905152E00C6B677 /* MnistGan2.mlmodel */,
+				4A69D3372905152E00C6B677 /* MnistGan3.mlmodel */,
+				4A69D3362905152E00C6B677 /* MnistGan4.mlmodel */,
+				4A69D32F2905152E00C6B677 /* MnistGan5.mlmodel */,
+				4A69D3322905152E00C6B677 /* MnistGan6.mlmodel */,
+				4A69D3352905152E00C6B677 /* MnistGan7.mlmodel */,
+				4A69D3332905152E00C6B677 /* MnistGan8.mlmodel */,
+				4A69D32E2905152D00C6B677 /* MnistGan9.mlmodel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A69D317290514D000C6B677 /* GAN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A69D326290514D300C6B677 /* Build configuration list for PBXNativeTarget "GAN" */;
+			buildPhases = (
+				4A69D314290514D000C6B677 /* Sources */,
+				4A69D315290514D000C6B677 /* Frameworks */,
+				4A69D316290514D000C6B677 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GAN;
+			productName = GAN;
+			productReference = 4A69D318290514D000C6B677 /* GAN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A69D310290514D000C6B677 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					4A69D317290514D000C6B677 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 4A69D313290514D000C6B677 /* Build configuration list for PBXProject "GAN" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A69D30F290514D000C6B677;
+			productRefGroup = 4A69D319290514D000C6B677 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A69D317290514D000C6B677 /* GAN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A69D316290514D000C6B677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A69D323290514D300C6B677 /* Preview Assets.xcassets in Resources */,
+				4A69D320290514D300C6B677 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A69D314290514D000C6B677 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A69D3402905152E00C6B677 /* MnistGan4.mlmodel in Sources */,
+				4A69D3432905193B00C6B677 /* Models.swift in Sources */,
+				4A69D3412905152E00C6B677 /* MnistGan3.mlmodel in Sources */,
+				4A69D34529051A7C00C6B677 /* Utils.swift in Sources */,
+				4A69D31E290514D000C6B677 /* ContentView.swift in Sources */,
+				4A69D3382905152E00C6B677 /* MnistGan9.mlmodel in Sources */,
+				4A69D33D2905152E00C6B677 /* MnistGan8.mlmodel in Sources */,
+				4A69D33B2905152E00C6B677 /* MnistGan2.mlmodel in Sources */,
+				4A69D33E2905152E00C6B677 /* MnistGan.mlmodel in Sources */,
+				4A69D33C2905152E00C6B677 /* MnistGan6.mlmodel in Sources */,
+				4A69D33A2905152E00C6B677 /* MnistGan1.mlmodel in Sources */,
+				4A69D33F2905152E00C6B677 /* MnistGan7.mlmodel in Sources */,
+				4A69D31C290514D000C6B677 /* GANApp.swift in Sources */,
+				4A69D3392905152E00C6B677 /* MnistGan5.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A69D324290514D300C6B677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A69D325290514D300C6B677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A69D327290514D300C6B677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GAN/Preview Content\"";
+				DEVELOPMENT_TEAM = 96B293Z3Y9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mystic.GAN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A69D328290514D300C6B677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GAN/Preview Content\"";
+				DEVELOPMENT_TEAM = 96B293Z3Y9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mystic.GAN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A69D313290514D000C6B677 /* Build configuration list for PBXProject "GAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A69D324290514D300C6B677 /* Debug */,
+				4A69D325290514D300C6B677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A69D326290514D300C6B677 /* Build configuration list for PBXNativeTarget "GAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A69D327290514D300C6B677 /* Debug */,
+				4A69D328290514D300C6B677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A69D310290514D000C6B677 /* Project object */;
+}
