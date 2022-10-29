@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A27725A290CFC72004A1CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A277259290CFC72004A1CA4 /* ViewController.swift */; };
-		4A27725C290D09ED004A1CA4 /* YOLOv3TinyInt8LUT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A27725B290D09ED004A1CA4 /* YOLOv3TinyInt8LUT.mlmodel */; };
-		4A27725E290D0A32004A1CA4 /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A27725D290D0A32004A1CA4 /* Detector.swift */; };
+		4A27725A290CFC72004A1CA4 /* VideoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A277259290CFC72004A1CA4 /* VideoCaptureView.swift */; };
+		4A28EBCC290D288300C80A4C /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A28EBCB290D288300C80A4C /* VideoCapture.swift */; };
+		4A28EBD0290D398D00C80A4C /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A28EBCF290D398D00C80A4C /* Inceptionv3.mlmodel */; };
+		4A28EBD2290D39E800C80A4C /* CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A28EBD1290D39E800C80A4C /* CIImage.swift */; };
 		4AD608F0290CB7D7007357AD /* ObjectRecognitionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD608EF290CB7D7007357AD /* ObjectRecognitionApp.swift */; };
 		4AD608F2290CB7D7007357AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD608F1290CB7D7007357AD /* ContentView.swift */; };
 		4AD608F4290CB7DB007357AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD608F3290CB7DB007357AD /* Assets.xcassets */; };
@@ -17,9 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A277259290CFC72004A1CA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4A27725B290D09ED004A1CA4 /* YOLOv3TinyInt8LUT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = YOLOv3TinyInt8LUT.mlmodel; path = ../../../../../DetectorAppSwiftUI/DetectorAppSwiftUI/YOLOv3TinyInt8LUT.mlmodel; sourceTree = "<group>"; };
-		4A27725D290D0A32004A1CA4 /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
+		4A277259290CFC72004A1CA4 /* VideoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureView.swift; sourceTree = "<group>"; };
+		4A28EBCB290D288300C80A4C /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		4A28EBCF290D398D00C80A4C /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		4A28EBD1290D39E800C80A4C /* CIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIImage.swift; sourceTree = "<group>"; };
 		4AD608EC290CB7D7007357AD /* ObjectRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD608EF290CB7D7007357AD /* ObjectRecognitionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectRecognitionApp.swift; sourceTree = "<group>"; };
 		4AD608F1290CB7D7007357AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,9 +61,10 @@
 			children = (
 				4AD608EF290CB7D7007357AD /* ObjectRecognitionApp.swift */,
 				4AD608F1290CB7D7007357AD /* ContentView.swift */,
-				4A277259290CFC72004A1CA4 /* ViewController.swift */,
-				4A27725D290D0A32004A1CA4 /* Detector.swift */,
-				4A27725B290D09ED004A1CA4 /* YOLOv3TinyInt8LUT.mlmodel */,
+				4A277259290CFC72004A1CA4 /* VideoCaptureView.swift */,
+				4A28EBD1290D39E800C80A4C /* CIImage.swift */,
+				4A28EBCB290D288300C80A4C /* VideoCapture.swift */,
+				4A28EBCF290D398D00C80A4C /* Inceptionv3.mlmodel */,
 				4AD608F3290CB7DB007357AD /* Assets.xcassets */,
 				4AD608F5290CB7DB007357AD /* Preview Content */,
 			);
@@ -146,10 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A27725E290D0A32004A1CA4 /* Detector.swift in Sources */,
-				4A27725A290CFC72004A1CA4 /* ViewController.swift in Sources */,
-				4A27725C290D09ED004A1CA4 /* YOLOv3TinyInt8LUT.mlmodel in Sources */,
+				4A28EBD0290D398D00C80A4C /* Inceptionv3.mlmodel in Sources */,
+				4A28EBD2290D39E800C80A4C /* CIImage.swift in Sources */,
+				4A27725A290CFC72004A1CA4 /* VideoCaptureView.swift in Sources */,
 				4AD608F2290CB7D7007357AD /* ContentView.swift in Sources */,
+				4A28EBCC290D288300C80A4C /* VideoCapture.swift in Sources */,
 				4AD608F0290CB7D7007357AD /* ObjectRecognitionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

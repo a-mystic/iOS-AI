@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var text = "nil"
     var body: some View {
-        HostedViewController()
-            .ignoresSafeArea()
+        ZStack(alignment: .bottom) {
+            VideoCaptureView(text: $text)
+                .ignoresSafeArea()
+            Text(text)
+        }
     }
 }
