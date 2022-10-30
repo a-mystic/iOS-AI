@@ -13,10 +13,11 @@ import Vision
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     @Binding var text: String
     
-    var previewView = CapturePreviewView()
+    let previewView = CapturePreviewView()
     let videoCapture = VideoCapture()
-    let context = CIContext()
-    let model = Inceptionv3()
+    let viewVisualizer = EmotionVisualizerView()
+    let imageProcessor = ImageProcessor()
+    let model = ExpressionRecognitionModelRaw()
     
     init(text: Binding<String>) {
         self._text = text
@@ -35,16 +36,24 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     private func setup() {
         let size = UIScreen.main.bounds
         self.previewView.layer.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height) // plus
-        if self.videoCapture.initCamera() {
-            (self.previewView.layer as! AVCaptureVideoPreviewLayer).session = self.videoCapture.captureSession
-            (self.previewView.layer as! AVCaptureVideoPreviewLayer).videoGravity = AVLayerVideoGravity.resizeAspectFill
-            self.videoCapture.asyncStartCapturing()
-            self.view.layer.addSublayer(previewView.layer) // plus
-        } else {
-            fatalError("Failed")
+        self.viewVisualizer.frame = CGRect(x: 0, y: size.height/2, width: size.width, height: size.height/2) // plus
+        self.viewVisualizer.backgroundColor = .clear // plus
+        videoCapture.asyncInit { success in
+            if success {
+                (self.previewView.layer as! AVCaptureVideoPreviewLayer).session = self.videoCapture.captureSession
+                (self.previewView.layer as! AVCaptureVideoPreviewLayer).videoGravity = AVLayerVideoGravity.resizeAspectFill
+                self.videoCapture.startCapturing()
+                self.view.layer.addSublayer(self.previewView.layer) // plus
+                self.view.addSubview(self.viewVisualizer) // plus
+            } else {
+                fatalError("failed to init VideoCapture")
+            }
         }
+        imageProcessor.delegate = self
     }
 }
+
+
 
 struct VideoCaptureView: UIViewControllerRepresentable {
     typealias UIViewControllerType = UIViewController
@@ -65,12 +74,23 @@ class CapturePreviewView: UIView {
 extension ViewController: VideoCaptureDelegate {
     func onFrameCaptured(videoCapture: VideoCapture, pixelBuffer: CVPixelBuffer?, timestamp: CMTime) {
         guard let pixelBuffer = pixelBuffer else { return }
-        guard let scaledPixelBuffer = CIImage(cvImageBuffer: pixelBuffer)
-            .resize(size: CGSize(width: 299, height: 299))
-            .topixelBuffer(context: context) else { return }
-        let prediction = try? self.model.prediction(image: scaledPixelBuffer)
-        DispatchQueue.main.async {
-            self.text = prediction?.classLabel ?? "nil"
+        self.imageProcessor.getFaces(pixelBuffer: pixelBuffer)
+    }
+}
+
+extension ViewController: ImageProcessorDelegate {
+    func onImageProcessorCompleted(status: Int, faces: [MLMultiArray]?) {
+        guard let faces = faces else { return }
+        guard faces.count > 0 else { return }
+        DispatchQueue.global(qos: .background).async {
+            for faceData in faces {
+                let prediction = try? self.model.prediction(image: faceData)
+                if let classPredictions = prediction?.classLabelProbs {
+                    DispatchQueue.main.async {
+                        self.viewVisualizer.update(labelConference: classPredictions)
+                    }
+                }
+            }
         }
     }
 }
