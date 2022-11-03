@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4ADDCF15290E7BD30055FFC2 /* FacialEmotionDetectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDCF14290E7BD30055FFC2 /* FacialEmotionDetectionApp.swift */; };
+		4ADDCF17290E7BD30055FFC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDCF16290E7BD30055FFC2 /* ContentView.swift */; };
+		4ADDCF19290E7BD60055FFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ADDCF18290E7BD60055FFC2 /* Assets.xcassets */; };
+		4ADDCF1C290E7BD60055FFC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ADDCF1B290E7BD60055FFC2 /* Preview Assets.xcassets */; };
+		4ADDCF25290E7C010055FFC2 /* VideoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDCF22290E7C010055FFC2 /* VideoCaptureView.swift */; };
+		4ADDCF29290E7C380055FFC2 /* ExpressionRecognitionModelRaw.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDCF28290E7C380055FFC2 /* ExpressionRecognitionModelRaw.mlmodel */; };
+		4ADDCF2F290E7C8A0055FFC2 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDCF2A290E7C890055FFC2 /* CIImageExtension.swift */; };
+		4ADDCF30290E7C8A0055FFC2 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDCF2B290E7C890055FFC2 /* VideoCapture.swift */; };
+		4ADDCF32290E7C8A0055FFC2 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDCF2D290E7C8A0055FFC2 /* UIDevice+Extension.swift */; };
+		4ADDCF33290E7C8A0055FFC2 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDCF2E290E7C8A0055FFC2 /* UIColorExtension.swift */; };
+		4ADDCF35290E7CDF0055FFC2 /* ImageProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDCF34290E7CDF0055FFC2 /* ImageProcess.swift */; };
+		4ADDCF37290E7FE30055FFC2 /* EmotionVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDCF36290E7FE30055FFC2 /* EmotionVisualizerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4ADDCF11290E7BD30055FFC2 /* FacialEmotionDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacialEmotionDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ADDCF14290E7BD30055FFC2 /* FacialEmotionDetectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialEmotionDetectionApp.swift; sourceTree = "<group>"; };
+		4ADDCF16290E7BD30055FFC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4ADDCF18290E7BD60055FFC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4ADDCF1B290E7BD60055FFC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4ADDCF22290E7C010055FFC2 /* VideoCaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCaptureView.swift; path = ../../ObjectRecognition/ObjectRecognition/VideoCaptureView.swift; sourceTree = "<group>"; };
+		4ADDCF28290E7C380055FFC2 /* ExpressionRecognitionModelRaw.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ExpressionRecognitionModelRaw.mlmodel; sourceTree = "<group>"; };
+		4ADDCF2A290E7C890055FFC2 /* CIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIImageExtension.swift; sourceTree = "<group>"; };
+		4ADDCF2B290E7C890055FFC2 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		4ADDCF2D290E7C8A0055FFC2 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		4ADDCF2E290E7C8A0055FFC2 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		4ADDCF34290E7CDF0055FFC2 /* ImageProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcess.swift; sourceTree = "<group>"; };
+		4ADDCF36290E7FE30055FFC2 /* EmotionVisualizerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionVisualizerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4ADDCF0E290E7BD30055FFC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ADDCF08290E7BD30055FFC2 = {
+			isa = PBXGroup;
+			children = (
+				4ADDCF13290E7BD30055FFC2 /* FacialEmotionDetection */,
+				4ADDCF12290E7BD30055FFC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4ADDCF12290E7BD30055FFC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ADDCF11290E7BD30055FFC2 /* FacialEmotionDetection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4ADDCF13290E7BD30055FFC2 /* FacialEmotionDetection */ = {
+			isa = PBXGroup;
+			children = (
+				4ADDCF14290E7BD30055FFC2 /* FacialEmotionDetectionApp.swift */,
+				4ADDCF16290E7BD30055FFC2 /* ContentView.swift */,
+				4ADDCF22290E7C010055FFC2 /* VideoCaptureView.swift */,
+				4ADDCF34290E7CDF0055FFC2 /* ImageProcess.swift */,
+				4ADDCF2A290E7C890055FFC2 /* CIImageExtension.swift */,
+				4ADDCF2E290E7C8A0055FFC2 /* UIColorExtension.swift */,
+				4ADDCF2D290E7C8A0055FFC2 /* UIDevice+Extension.swift */,
+				4ADDCF2B290E7C890055FFC2 /* VideoCapture.swift */,
+				4ADDCF36290E7FE30055FFC2 /* EmotionVisualizerView.swift */,
+				4ADDCF28290E7C380055FFC2 /* ExpressionRecognitionModelRaw.mlmodel */,
+				4ADDCF18290E7BD60055FFC2 /* Assets.xcassets */,
+				4ADDCF1A290E7BD60055FFC2 /* Preview Content */,
+			);
+			path = FacialEmotionDetection;
+			sourceTree = "<group>";
+		};
+		4ADDCF1A290E7BD60055FFC2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4ADDCF1B290E7BD60055FFC2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4ADDCF10290E7BD30055FFC2 /* FacialEmotionDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ADDCF1F290E7BD60055FFC2 /* Build configuration list for PBXNativeTarget "FacialEmotionDetection" */;
+			buildPhases = (
+				4ADDCF0D290E7BD30055FFC2 /* Sources */,
+				4ADDCF0E290E7BD30055FFC2 /* Frameworks */,
+				4ADDCF0F290E7BD30055FFC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacialEmotionDetection;
+			productName = FacialEmotionDetection;
+			productReference = 4ADDCF11290E7BD30055FFC2 /* FacialEmotionDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ADDCF09290E7BD30055FFC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					4ADDCF10290E7BD30055FFC2 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 4ADDCF0C290E7BD30055FFC2 /* Build configuration list for PBXProject "FacialEmotionDetection" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4ADDCF08290E7BD30055FFC2;
+			productRefGroup = 4ADDCF12290E7BD30055FFC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4ADDCF10290E7BD30055FFC2 /* FacialEmotionDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4ADDCF0F290E7BD30055FFC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ADDCF1C290E7BD60055FFC2 /* Preview Assets.xcassets in Resources */,
+				4ADDCF19290E7BD60055FFC2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4ADDCF0D290E7BD30055FFC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ADDCF37290E7FE30055FFC2 /* EmotionVisualizerView.swift in Sources */,
+				4ADDCF35290E7CDF0055FFC2 /* ImageProcess.swift in Sources */,
+				4ADDCF25290E7C010055FFC2 /* VideoCaptureView.swift in Sources */,
+				4ADDCF32290E7C8A0055FFC2 /* UIDevice+Extension.swift in Sources */,
+				4ADDCF29290E7C380055FFC2 /* ExpressionRecognitionModelRaw.mlmodel in Sources */,
+				4ADDCF2F290E7C8A0055FFC2 /* CIImageExtension.swift in Sources */,
+				4ADDCF33290E7C8A0055FFC2 /* UIColorExtension.swift in Sources */,
+				4ADDCF17290E7BD30055FFC2 /* ContentView.swift in Sources */,
+				4ADDCF30290E7C8A0055FFC2 /* VideoCapture.swift in Sources */,
+				4ADDCF15290E7BD30055FFC2 /* FacialEmotionDetectionApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4ADDCF1D290E7BD60055FFC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4ADDCF1E290E7BD60055FFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4ADDCF20290E7BD60055FFC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FacialEmotionDetection/Preview Content\"";
+				DEVELOPMENT_TEAM = 96B293Z3Y9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "use camera.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mystic.FacialEmotionDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4ADDCF21290E7BD60055FFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FacialEmotionDetection/Preview Content\"";
+				DEVELOPMENT_TEAM = 96B293Z3Y9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "use camera.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mystic.FacialEmotionDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ADDCF0C290E7BD30055FFC2 /* Build configuration list for PBXProject "FacialEmotionDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADDCF1D290E7BD60055FFC2 /* Debug */,
+				4ADDCF1E290E7BD60055FFC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ADDCF1F290E7BD60055FFC2 /* Build configuration list for PBXNativeTarget "FacialEmotionDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADDCF20290E7BD60055FFC2 /* Debug */,
+				4ADDCF21290E7BD60055FFC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4ADDCF09290E7BD30055FFC2 /* Project object */;
+}
